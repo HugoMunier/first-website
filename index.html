@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Munier – Galerie de Parfums</title>
+
+  <!-- J'importe mes polices depuis Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Je lie mon fichier CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Bande de promo en haut de page -->
+  <div class="promo">
+    Livraison offerte dès 80 € d'achat — <a href="#">Découvrir nos offres →</a>
+  </div>
+
+  <!-- Navigation principale -->
+  <nav>
+    <span class="logo">MUNIER</span>
+
+    <ul>
+      <li><a href="#">Femme</a></li>
+      <li><a href="#">Homme</a></li>
+      <li><a href="#">Unisexe</a></li>
+      <li><a href="#" class="actif">Nouveautés</a></li>
+      <li><a href="#">Coffrets</a></li>
+    </ul>
+
+    <div class="icones-nav">
+      <a href="#">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        Panier
+      </a>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+
+    <h1>Galerie de <em>Parfums</em></h1>
+
+    <!-- Section recommandations -->
+    <h2 class="titre-section">Recommandations</h2>
+
+    <div class="grille-produits">
+
+      <!-- Carte 1 : Tom Ford -->
+      <div class="carte">
+        <div class="image-produit">
+          <img src="images/Noir_extreme.png" alt="Tom Ford Noir Extrême" />
+        </div>
+        <p class="marque">TOM FORD</p>
+        <p class="nom">Noir Extrême</p>
+        <p class="famille">Oriental Boisé</p>
+        <div class="pied-carte">
+          <span class="prix">179.99 €</span>
+          <button class="btn-coeur">♡</button>
+        </div>
+      </div>
+
+      <!-- Carte 2 : Maison Margiela -->
+      <div class="carte">
+        <div class="image-produit">
+          <img src="images/Never_ending_summer.png" alt="Maison Margiela Never Ending Summer" />
+        </div>
+        <p class="marque">MAISON MARGIELA</p>
+        <p class="nom">Never Ending Summer</p>
+        <p class="famille">Hespéridé Floral</p>
+        <div class="pied-carte">
+          <span class="prix">109.99 €</span>
+          <button class="btn-coeur">♡</button>
+        </div>
+      </div>
+
+      <!-- Carte 3 : Dolce & Gabbana -->
+      <div class="carte">
+        <div class="image-produit">
+          <img src="images/light_blue_forever.png" alt="Dolce & Gabbana Light Blue Forever" />
+        </div>
+        <p class="marque">DOLCE & GABBANA</p>
+        <p class="nom">Light Blue Forever</p>
+        <p class="famille">Floral Aquatique</p>
+        <div class="pied-carte">
+          <span class="prix">89.99 €</span>
+          <button class="btn-coeur">♡</button>
+        </div>
+      </div>
+
+      <!-- Carte 4 : YSL -->
+      <div class="carte">
+        <div class="image-produit">
+          <img src="images/My_sellf.png" alt="YSL Myself" />
+        </div>
+        <p class="marque">YVES SAINT LAURENT</p>
+        <p class="nom">Myself</p>
+        <p class="famille">Boisé Musqué</p>
+        <div class="pied-carte">
+          <span class="prix">119.99 €</span>
+          <button class="btn-coeur">♡</button>
+        </div>
+      </div>
+
+    </div><!-- fin grille recommandations -->
+
+    <!-- Ligne de séparation -->
+    <hr class="separateur" />
+
+    <!-- Section catalogue complet -->
+    <h2 class="titre-section">Tous nos parfums</h2>
+
+    <div class="zone-catalogue">
+
+      <!-- Filtres à gauche -->
+      <aside class="filtres">
+
+        <div class="groupe-filtre">
+          <p class="titre-filtre">TRIER PAR</p>
+          <label><input type="radio" name="tri" checked /> Prix croissant</label>
+          <label><input type="radio" name="tri" /> Prix décroissant</label>
+          <label><input type="radio" name="tri" /> Nom A - Z</label>
+          <label><input type="radio" name="tri" /> Nom Z - A</label>
+        </div>
+
+        <div class="groupe-filtre">
+          <p class="titre-filtre">GENRE</p>
+          <label><input type="checkbox" /> Femme</label>
+          <label><input type="checkbox" /> Homme</label>
+          <label><input type="checkbox" /> Unisexe</label>
+        </div>
+
+        <div class="groupe-filtre">
+          <p class="titre-filtre">MARQUE</p>
+          <label><input type="checkbox" /> Chanel</label>
+          <label><input type="checkbox" /> Tom Ford</label>
+          <label><input type="checkbox" /> Dior</label>
+        </div>
+
+        <div class="groupe-filtre">
+          <p class="titre-filtre">FAMILLE OLFACTIVE</p>
+          <label><input type="checkbox" /> Floral</label>
+          <label><input type="checkbox" /> Oriental</label>
+          <label><input type="checkbox" /> Boisé</label>
+          <label><input type="checkbox" /> Aquatique</label>
+        </div>
+
+      </aside>
+
+      <!-- Grille catalogue -->
+      <div class="catalogue">
+
+        <p class="nb-resultats">125 résultats</p>
+
+        <div class="grille-produits">
+
+          <div class="carte">
+            <div class="image-produit">
+              <img src="images/Noir_extreme.png" alt="Tom Ford Noir Extrême" />
+            </div>
+            <p class="marque">TOM FORD</p>
+            <p class="nom">Noir Extrême</p>
+            <p class="famille">Oriental Boisé</p>
+            <div class="pied-carte">
+              <span class="prix">179.99 €</span>
+              <button class="btn-coeur">♡</button>
+            </div>
+          </div>
+
+          <div class="carte">
+            <div class="image-produit">
+              <img src="images/Never_ending_summer.png" alt="Never Ending Summer" />
+            </div>
+            <p class="marque">MAISON MARGIELA</p>
+            <p class="nom">Never Ending Summer</p>
+            <p class="famille">Hespéridé Floral</p>
+            <div class="pied-carte">
+              <span class="prix">109.99 €</span>
+              <button class="btn-coeur">♡</button>
+            </div>
+          </div>
+
+          <div class="carte">
+            <div class="image-produit">
+              <img src="images/light_blue_forever.png" alt="Light Blue Forever" />
+            </div>
+            <p class="marque">DOLCE & GABBANA</p>
+            <p class="nom">Light Blue Forever</p>
+            <p class="famille">Floral Aquatique</p>
+            <div class="pied-carte">
+              <span class="prix">89.99 €</span>
+              <button class="btn-coeur">♡</button>
+            </div>
+          </div>
+
+          <div class="carte">
+            <div class="image-produit">
+              <img src="images/bleu_de_chanel.png" alt="Bleu de Chanel" />
+            </div>
+            <p class="marque">CHANEL</p>
+            <p class="nom">Bleu de Chanel</p>
+            <p class="famille">Boisé Aromatique</p>
+            <div class="pied-carte">
+              <span class="prix">129.99 €</span>
+              <button class="btn-coeur">♡</button>
+            </div>
+          </div>
+
+          <div class="carte">
+            <div class="image-produit">
+              <img src="images/My_sellf.png" alt="YSL Myself" />
+            </div>
+            <p class="marque">YVES SAINT LAURENT</p>
+            <p class="nom">Myself</p>
+            <p class="famille">Boisé Musqué</p>
+            <div class="pied-carte">
+              <span class="prix">119.99 €</span>
+              <button class="btn-coeur">♡</button>
+            </div>
+          </div>
+
+          <div class="carte">
+            <div class="image-produit">
+              <img src="images/le_male.png" alt="Jean Paul Gaultier Le Mâle" />
+            </div>
+            <p class="marque">JEAN PAUL GAULTIER</p>
+            <p class="nom">Le Mâle</p>
+            <p class="famille">Fougère Aromatique</p>
+            <div class="pied-carte">
+              <span class="prix">79.99 €</span>
+              <button class="btn-coeur">♡</button>
+            </div>
+          </div>
+
+        </div><!-- fin grille catalogue -->
+
+      </div><!-- fin catalogue -->
+
+    </div><!-- fin zone-catalogue -->
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 Munier — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>

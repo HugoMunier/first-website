@@ -1,3 +1,314 @@
-.red{
-    color:#FF0000
+/* ==============================
+   COULEURS et POLICES
+   Je mets mes couleurs principales ici
+   pour pouvoir les changer facilement
+   ============================== */
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* ==============================
+   BANDE PROMO
+   ============================== */
+
+.promo {
+  background-color: #1C2340;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.promo a {
+  color: #C9A96E;
+  text-decoration: none;
+}
+
+
+/* ==============================
+   NAVIGATION
+   J'utilise flexbox pour mettre
+   le logo, les liens et les icônes
+   sur la même ligne
+   ============================== */
+
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  letter-spacing: 0.3em;
+  color: #1C2340;
+  font-weight: 500;
+}
+
+/* La liste des liens de navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Le lien actif a un soulignement doré */
+nav ul a.actif {
+  color: #1C2340;
+  border-bottom: 2px solid #C9A96E;
+  padding-bottom: 3px;
+}
+
+nav ul a:hover {
+  color: #C9A96E;
+}
+
+/* Les icônes à droite */
+.icones-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icones-nav a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+/* ==============================
+   CONTENU PRINCIPAL
+   ============================== */
+
+main {
+  padding: 40px 48px;
+}
+
+/* Titre de la page */
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #1C2340;
+  margin-bottom: 30px;
+}
+
+h1 em {
+  font-style: italic;
+}
+
+/* Titres de section */
+.titre-section {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  border-left: 3px solid #C9A96E;
+  padding-left: 10px;
+}
+
+
+/* ==============================
+   GRILLE DE PRODUITS
+   Je mets 4 colonnes pour les
+   recommandations et le catalogue
+   ============================== */
+
+.grille-produits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+/* Une carte produit */
+.carte {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.carte:hover {
+  border-color: #C9A96E;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* La zone image */
+.image-produit {
+  height: 160px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.image-produit img {
+  max-height: 140px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Textes de la carte */
+.marque {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: #888;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+
+.nom {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 2px 0;
+}
+
+.famille {
+  font-size: 11px;
+  color: #888;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+/* Ligne prix + bouton cœur */
+.pied-carte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prix {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-coeur {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #888;
+}
+
+.btn-coeur:hover {
+  border-color: #C9A96E;
+  color: #C9A96E;
+}
+
+
+/* ==============================
+   LIGNE DE SÉPARATION
+   ============================== */
+
+.separateur {
+  border: none;
+  border-top: 1px solid #C9A96E;
+  opacity: 0.4;
+  margin-bottom: 36px;
+}
+
+
+/* ==============================
+   ZONE CATALOGUE
+   Filtres à gauche, grille à droite
+   ============================== */
+
+.zone-catalogue {
+  display: flex;
+  gap: 32px;
+}
+
+/* Colonne de filtres */
+.filtres {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.groupe-filtre {
+  border-top: 1px solid #e0e0e0;
+  padding: 14px 0;
+}
+
+.titre-filtre {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+/* Chaque option de filtre */
+.groupe-filtre label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.groupe-filtre input {
+  margin-right: 6px;
+}
+
+/* Zone catalogue (résultats + grille) */
+.catalogue {
+  flex: 1;
+}
+
+.nb-resultats {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+/* Dans le catalogue, je mets 2 colonnes au lieu de 4 */
+.catalogue .grille-produits {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* ==============================
+   PIED DE PAGE
+   ============================== */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #1C2340;
+  color: #888;
+  font-size: 12px;
+  margin-top: 60px;
 }
