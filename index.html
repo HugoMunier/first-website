@@ -18,7 +18,12 @@
     Livraison offerte dès 80 € d'achat — <a href="#">Découvrir nos offres →</a>
   </div>
 
-  <!-- Navigation principale -->
+ <!-- Navigation
+     Au début j'avais mis mes liens dans des <div>
+     mais j'ai appris que <nav> c'est plus correct
+     pour dire au navigateur que c'est un menu.
+     Pareil pour <main>, <aside> et <footer>,
+     ça s'appelle des balises "sémantiques". -->
   <nav>
     <span class="logo">MUNIER</span>
 
@@ -123,7 +128,12 @@
 
     <div class="zone-catalogue">
 
-      <!-- Filtres à gauche -->
+      <!-- Filtres
+      J'ai utilisé la balise <aside> parce que
+      les filtres sont un contenu "à côté" du
+      contenu principal. C'est plus propre que
+      de mettre une <div> partout pour tout. -->
+
       <aside class="filtres">
 
         <div class="groupe-filtre">
@@ -163,8 +173,20 @@
 
         <p class="nb-resultats">125 résultats</p>
 
+        <!-- Grille des recommandations
+         J'ai mis class="grille-produits" sur cette div
+         pour lui appliquer le style grid du CSS.
+         Au début j'avais mis le style directement
+         dans le HTML avec style="..." mais mieux vaut tout
+         mettre dans le fichier CSS séparé. -->
+
         <div class="grille-produits">
 
+            <!-- Le chemin images/ veut dire "cherche
+            un dossier images au même endroit que
+            ce fichier html". J'ai compris ça après
+            avoir eu des images cassées. -->
+            
           <div class="carte">
             <div class="image-produit">
               <img src="images/Noir_extreme.png" alt="Tom Ford Noir Extrême" />
