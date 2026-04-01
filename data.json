@@ -1,0 +1,67 @@
+{
+  "product": "parfums",
+  "brands": [
+    "Tom Ford",
+    "Maison Margiela",
+    "Dolce & Gabbana",
+    "Yves Saint Laurent",
+    "Chanel",
+    "Jean Paul Gaultier"
+  ],
+  "items": [
+    {
+      "name": "Noir Extrême",
+      "brand": "TOM FORD",
+      "price": 179.99,
+      "famille": "Oriental Boisé",
+      "gender": "HOMME",
+      "description": "Un parfum sombre et envoûtant aux notes de bois de oud, de vanille et de noix de coco.",
+      "image": "images/Noir_extreme.png"
+    },
+    {
+      "name": "Never Ending Summer",
+      "brand": "MAISON MARGIELA",
+      "price": 109.99,
+      "famille": "Hespéridé Floral",
+      "gender": "UNISEXE",
+      "description": "Une fragrance légère et ensoleillée qui capture l'essence de l'été, avec des notes d'agrumes et de fleurs blanches.",
+      "image": "images/Never_ending_summer.png"
+    },
+    {
+      "name": "Light Blue Forever",
+      "brand": "DOLCE & GABBANA",
+      "price": 89.99,
+      "famille": "Floral Aquatique",
+      "gender": "FEMME",
+      "description": "Un parfum frais et aquatique aux notes de citron de Sicile, de pomme et de cèdre blanc.",
+      "image": "images/light_blue_forever.png"
+    },
+    {
+      "name": "Myself",
+      "brand": "YVES SAINT LAURENT",
+      "price": 119.99,
+      "famille": "Boisé Musqué",
+      "gender": "HOMME",
+      "description": "Un parfum audacieux et sensuel qui mêle des notes de cardamome, de vétiver et de musc blanc.",
+      "image": "images/My_sellf.png"
+    },
+    {
+      "name": "Bleu de Chanel",
+      "brand": "CHANEL",
+      "price": 129.99,
+      "famille": "Boisé Aromatique",
+      "gender": "HOMME",
+      "description": "Un parfum frais et boisé aux notes de citron, de menthe poivrée et de bois de santal.",
+      "image": "images/bleu_de_chanel.png"
+    },
+    {
+      "name": "Le Mâle",
+      "brand": "JEAN PAUL GAULTIER",
+      "price": 79.99,
+      "famille": "Fougère Aromatique",
+      "gender": "HOMME",
+      "description": "Un classique intemporel aux notes de lavande, de menthe et de musc, dans son iconique flacon en forme de torse.",
+      "image": "images/le_male.png"
+    }
+  ]
+}

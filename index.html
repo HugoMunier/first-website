@@ -11,6 +11,8 @@
   <!-- Je lie mon fichier CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
+<!-- Je lie mon fichier Java Script -->
+<script src="script.js"></script>
 <body>
 
   <!-- Bande de promo en haut de page -->
@@ -60,8 +62,14 @@
     <!-- Section recommandations -->
     <h2 class="titre-section">Recommandations</h2>
 
+    <!-- J'ai choisi de laisser ces cartes en HTML statique
+     et non générées par JavaScript comme le catalogue.
+     La raison : les recommandations sont fixes et choisies
+     manuellement, elles n'ont pas besoin d'être filtrées
+     ou triées. Ce n'est donc pas utile de les charger
+     depuis le JSON. -->
+     
     <div class="grille-produits">
-
       <!-- Carte 1 : Tom Ford -->
       <div class="carte">
         <div class="image-produit">
@@ -119,6 +127,7 @@
       </div>
 
     </div><!-- fin grille recommandations -->
+    
 
     <!-- Ligne de séparation -->
     <hr class="separateur" />
@@ -155,7 +164,10 @@
           <p class="titre-filtre">MARQUE</p>
           <label><input type="checkbox" /> Chanel</label>
           <label><input type="checkbox" /> Tom Ford</label>
-          <label><input type="checkbox" /> Dior</label>
+          <label><input type="checkbox" /> Dolce & Gabbana</label>
+          <label><input type="checkbox" /> Maison Margiela</label>
+          <label><input type="checkbox" /> Yves Saint Laurent</label>
+          <label><input type="checkbox" /> Jean Paul Gaultier</label>
         </div>
 
         <div class="groupe-filtre">
@@ -164,6 +176,8 @@
           <label><input type="checkbox" /> Oriental</label>
           <label><input type="checkbox" /> Boisé</label>
           <label><input type="checkbox" /> Aquatique</label>
+          <label><input type="checkbox" /> Fougère</label>
+          <label><input type="checkbox" /> Hespéridé</label>
         </div>
 
       </aside>
@@ -171,7 +185,7 @@
       <!-- Grille catalogue -->
       <div class="catalogue">
 
-        <p class="nb-resultats">125 résultats</p>
+        <p class="nb-resultats"></p>
 
         <!-- Grille des recommandations
          J'ai mis class="grille-produits" sur cette div
@@ -180,91 +194,8 @@
          dans le HTML avec style="..." mais mieux vaut tout
          mettre dans le fichier CSS séparé. -->
 
+        <!-- Les cartes sont générées automatiquement par script.js -->
         <div class="grille-produits">
-
-            <!-- Le chemin images/ veut dire "cherche
-            un dossier images au même endroit que
-            ce fichier html". J'ai compris ça après
-            avoir eu des images cassées. -->
-            
-          <div class="carte">
-            <div class="image-produit">
-              <img src="images/Noir_extreme.png" alt="Tom Ford Noir Extrême" />
-            </div>
-            <p class="marque">TOM FORD</p>
-            <p class="nom">Noir Extrême</p>
-            <p class="famille">Oriental Boisé</p>
-            <div class="pied-carte">
-              <span class="prix">179.99 €</span>
-              <button class="btn-coeur">♡</button>
-            </div>
-          </div>
-
-          <div class="carte">
-            <div class="image-produit">
-              <img src="images/Never_ending_summer.png" alt="Never Ending Summer" />
-            </div>
-            <p class="marque">MAISON MARGIELA</p>
-            <p class="nom">Never Ending Summer</p>
-            <p class="famille">Hespéridé Floral</p>
-            <div class="pied-carte">
-              <span class="prix">109.99 €</span>
-              <button class="btn-coeur">♡</button>
-            </div>
-          </div>
-
-          <div class="carte">
-            <div class="image-produit">
-              <img src="images/light_blue_forever.png" alt="Light Blue Forever" />
-            </div>
-            <p class="marque">DOLCE & GABBANA</p>
-            <p class="nom">Light Blue Forever</p>
-            <p class="famille">Floral Aquatique</p>
-            <div class="pied-carte">
-              <span class="prix">89.99 €</span>
-              <button class="btn-coeur">♡</button>
-            </div>
-          </div>
-
-          <div class="carte">
-            <div class="image-produit">
-              <img src="images/bleu_de_chanel.png" alt="Bleu de Chanel" />
-            </div>
-            <p class="marque">CHANEL</p>
-            <p class="nom">Bleu de Chanel</p>
-            <p class="famille">Boisé Aromatique</p>
-            <div class="pied-carte">
-              <span class="prix">129.99 €</span>
-              <button class="btn-coeur">♡</button>
-            </div>
-          </div>
-
-          <div class="carte">
-            <div class="image-produit">
-              <img src="images/My_sellf.png" alt="YSL Myself" />
-            </div>
-            <p class="marque">YVES SAINT LAURENT</p>
-            <p class="nom">Myself</p>
-            <p class="famille">Boisé Musqué</p>
-            <div class="pied-carte">
-              <span class="prix">119.99 €</span>
-              <button class="btn-coeur">♡</button>
-            </div>
-          </div>
-
-          <div class="carte">
-            <div class="image-produit">
-              <img src="images/le_male.png" alt="Jean Paul Gaultier Le Mâle" />
-            </div>
-            <p class="marque">JEAN PAUL GAULTIER</p>
-            <p class="nom">Le Mâle</p>
-            <p class="famille">Fougère Aromatique</p>
-            <div class="pied-carte">
-              <span class="prix">79.99 €</span>
-              <button class="btn-coeur">♡</button>
-            </div>
-          </div>
-
         </div><!-- fin grille catalogue -->
 
       </div><!-- fin catalogue -->
